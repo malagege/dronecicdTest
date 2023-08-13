@@ -10,19 +10,3 @@ steps:
   - echo world
   - echo 123456678
 
----
-kind: pipeline
-type: docker
-name: test
-
-platform:
-  os: linux
-  arch: arm64
-
-steps:
-- name: greeting
-  image: alpine
-  commands:
-  - echo hello
-  - echo world
-  - echo 123456678
