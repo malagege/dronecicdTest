@@ -15,6 +15,10 @@ kind: pipeline
 type: docker
 name: test
 
+platform:
+  os: linux
+  arch: arm64
+
 steps:
 - name: greeting
   image: alpine
