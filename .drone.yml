@@ -9,7 +9,14 @@ steps:
   - echo hello
   - echo world
   - echo 123456678
-
+  
+- name: discord notification
+  image: appleboy/drone-discord
+  settings:
+    webhook_id: 
+      from_secret: webhook_id
+    webhook_token:
+      from_secret: webhook_token
 ---
 kind: pipeline
 type: docker
