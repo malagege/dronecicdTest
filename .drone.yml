@@ -17,6 +17,8 @@ steps:
       from_secret: webhook_id
     webhook_token:
       from_secret: webhook_token
+    message:
+      hello world!
 ---
 kind: pipeline
 type: docker
