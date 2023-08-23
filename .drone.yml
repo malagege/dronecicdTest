@@ -21,8 +21,6 @@ steps:
 kind: pipeline
 type: docker
 name: default
-depends_on: 
-- abc
 
 steps:
 - name: greeting
