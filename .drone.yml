@@ -13,12 +13,10 @@ steps:
 - name: discord notification
   image: appleboy/drone-discord
   settings:
-    webhook_id: 
-      from_secret: webhook_id
+    webhook_id:
+      from_secret: discord_webhook_id
     webhook_token:
-      from_secret: webhook_token
-    message:
-      hello world!
+      from_secret: discord_webhook_token
 ---
 kind: pipeline
 type: docker
